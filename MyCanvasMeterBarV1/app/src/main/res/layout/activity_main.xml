@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e212d"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:background="#6e7c7c"
+        android:id="@+id/fl_meter"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <cat.meaw.meow.mycanvasmeterbarv1.CustomMeterBar
+            android:id="@+id/meter1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <TextView
+        android:layout_below="@id/fl_meter"
+        android:id="@+id/txt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="RUN.."
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/start_circle"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_value"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"/>
+    </LinearLayout>
+
+</RelativeLayout>
